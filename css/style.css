@@ -1,0 +1,185 @@
+@font-face {
+  font-family: GreatVibes;
+  src: url("../font/GreatVibes-Regular.ttf");
+}
+@font-face {
+  font-family: CormorantGaramond;
+  src: url("../font/CormorantGaramond-Regular.ttf");
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.wedding-card {
+  height: 100vh;
+  width: 100%;
+  padding: 30px;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(bottom, rgb(105, 173, 212) 0%, rgb(23, 82, 145) 84%);
+  background-image: -ms-linear-gradient(bottom, rgb(105, 173, 212) 0%, rgb(23, 82, 145) 84%);
+  background-image: -webkit-gradient(linear, left bottom, left top);
+}
+
+.wed-left {
+  background-color: #f9fbee;
+  margin-right: 10px;
+  margin-left: -10px;
+  position: relative;
+  transform: translateX(50%);
+  z-index: 100;
+  transition: all 1s ease;
+}
+.wed-left .text-bottom {
+  font-family: GreatVibes;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.wed-left .flower {
+  width: 103%;
+  margin: 0 0 0 -10px;
+  position: relative;
+}
+.wed-left .flower img {
+  width: 100%;
+}
+.wed-left .flower .wed-text {
+  font-family: GreatVibes;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: transparent;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.wed-left .flower h1 {
+  font-size: 80px;
+  margin-top: -5px;
+  line-height: 100%;
+  margin-bottom: 0;
+}
+.wed-left .flower h5 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.wed-right {
+  background-color: #fcfdf8;
+  margin-left: 10px;
+  margin-right: -10px;
+  position: relative;
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.wed-right .center {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  font-family: CormorantGaramond;
+  font-weight: 600;
+}
+.wed-right .text-bottom {
+  font-family: GreatVibes;
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  z-index: 10;
+}
+.wed-right .top-flow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.wed-right .bottom-flow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+.wed-right .head, .wed-right .invite, .wed-right .date-repeat {
+  color: #81827d;
+}
+.wed-right .invite {
+  margin-top: 20px;
+}
+.wed-right .name {
+  margin: 20px 0;
+}
+.wed-right .sub-head, .wed-right .name, .wed-right .date, .wed-right .address {
+  color: #a9255e;
+}
+.wed-right .head {
+  font-weight: bold;
+}
+.wed-right .address {
+  font-size: 22px;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 10px;
+}
+.wed-right .time {
+  font-weight: bold;
+}
+.wed-right .date {
+  font-size: 32px;
+}
+.wed-right .date-repeat {
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+}
+.wed-right .name {
+  font-family: GreatVibes;
+}/*# sourceMappingURL=style.css.map */
